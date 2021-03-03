@@ -1,0 +1,27 @@
+<h3>Uppdate Demande</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Titre</label>
+      <input type="text" class="form-control" id="titre" required [(ngModel)]="demande.titre" name="titre">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Description</label>
+      <input type="text" class="form-control" id="lastName" required [(ngModel)]="demande.description" name="description">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Debut</label>
+      <input type="text" class="form-control" id="debut" required [(ngModel)]="demande.debut" name="debut">
+    </div>
+
+    <div class="form-group">
+        <label for="name">Nbjours</label>
+        <input type="text" class="form-control" id="nbjours" required [(ngModel)]="demande.nbjours" name="nbjours">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+

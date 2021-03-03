@@ -1,0 +1,21 @@
+<h3>Upddate Rappel</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Titre</label>
+      <input type="text" class="form-control" id="titre" required [(ngModel)]="rappel.titre" name="titre">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Description</label>
+      <input type="text" class="form-control" id="lastName" required [(ngModel)]="rappel.description" name="description">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Date</label>
+      <input type="text" class="form-control" id="date" required [(ngModel)]="rappel.date" name="date">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,22 @@
+<h2>Demande Detaile</h2> 
+
+<hr/>
+<div *ngIf="demande">
+  <div>
+    <label><b>Titre: </b></label> {{demande.titre}}
+  </div>
+  <div>
+    <label><b>Description: </b></label> {{demande.description}}
+  </div>
+  <div>
+    <label><b>Debut: </b></label> {{demande.debut}}
+  </div> 
+  <div>
+    <label><b>Nbjours: </b></label> {{demande.nbjours}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-danger">Back to Demande List</button><br>
+

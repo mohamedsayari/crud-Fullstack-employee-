@@ -1,0 +1,18 @@
+<h2>Rappel Detaille</h2> 
+
+<hr/>
+<div *ngIf="rappel">
+  <div>
+    <label><b>Titre: </b></label> {{rappel.titre}}
+  </div>
+  <div>
+    <label><b>Description: </b></label> {{rappel.description}}
+  </div>
+  <div>
+    <label><b>Date: </b></label> {{rappel.date}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Rappel List</button><br>
